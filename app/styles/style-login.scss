@@ -1,0 +1,92 @@
+body.login {
+  position: relative;
+  max-width: 100%;
+  //padding-top: 96px;
+  background-color: #e1eefc;
+  box-shadow: inset 0 0 80px rgba(35, 49, 176, 0.1);
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(152.55deg, #E8F0F9 2%, #CCE1F7 20.15%, #C6DBF4 62.98%);
+
+    filter: blur(80px);
+  }
+  .message {
+    background-color: #F0F0F0;
+    border-radius: 3px;
+    border-left: 4px solid #4F4F4F;
+    color: #444C5A;
+  }
+  div#login {
+    h1 {
+      a {
+        //background-image: url(../images/logo-gray.png);
+      }
+    }
+
+    form#loginform {
+      background: #D2ECD7;
+      border-radius: 3px;
+      border-color: #D2ECD7;
+      p {
+        label {}
+        &.forgetmenot {
+          input#rememberme {}
+        }
+        &.submit {
+          input#wp-submit {}
+        }
+      }
+
+      input {
+        &:not(.button) {
+          padding: 10px 15px;
+          background: #FFFFFF;
+          border: 1px solid #D2ECD7;
+          box-sizing: border-box;
+          border-radius: 3px;
+          font-size: 16px;
+          &:focus {
+            border-color: #003A78;
+          }
+        }
+
+        &.button {
+          background-color: #003A78;
+          border-color: #003A78;
+        }
+
+        &#user_login {}
+        &#user_pass {}
+
+      }
+
+
+    }
+
+    p#nav {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background-color: #D2ECD7;
+      border-radius: 3px;
+      a {}
+    }
+
+    p#backtoblog {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background-color: #D2ECD7;
+      border-radius: 3px;
+      a {}
+    }
+  }
+}
+
+
+№wp-admin-bar-top-secondary {
+  display: none;
+}

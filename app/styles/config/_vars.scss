@@ -1,0 +1,108 @@
+$default-font: 'HelveticaNeueCyr', sans-serif;
+
+$main-text: #313131;
+$main-heading: $main-text;
+
+
+
+
+$c-white: #fff;
+$c-gray: #313131;
+$c-light: #F2F2F2;
+
+$bg-dark: #1E232C;
+$bg-green: #40C56A;
+$bg-light: #F3F6FB;
+
+
+$ease-in: all 200ms ease-in;
+
+
+$orange: #FDB811;
+
+
+$form-border-width: 1px;
+$border-radius-forms: 5px;
+
+
+
+
+.fz-16 {
+  font-size: 14px;
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.fz-18 {
+  font-size: 16px;
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.fz-20 {
+  font-size: 16px;
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.fz-22 {
+  font-size: 20px;
+  @media (min-width: 768px) {
+    font-size: 22px;
+  }
+}
+
+
+.fz-32 {
+  font-size: 28px;
+  @media (min-width: 768px) {
+    font-size: 32px;
+  }
+}
+
+.fz-36 {
+  font-size: 30px;
+  @media (min-width: 768px) {
+    font-size: 36px;
+  }
+}
+
+.fz-38 {
+  font-size: 32px;
+  @media (min-width: 768px) {
+    font-size: 38px;
+  }
+}
+
+
+.pt-lg {
+  padding-top: 100px;
+  @media (min-width: 992px) {
+    padding-top: 150px;
+  }
+}
+
+.pb-lg {
+  padding-bottom: 100px;
+  @media (min-width: 992px) {
+    padding-bottom: 150px;
+  }
+}
+
+.pt-md {
+  padding-top: 50px;
+  @media (min-width: 992px) {
+    padding-top: 80px;
+  }
+}
+
+.pb-md {
+  padding-bottom: 50px;
+  @media (min-width: 992px) {
+    padding-bottom: 80px;
+  }
+}
+

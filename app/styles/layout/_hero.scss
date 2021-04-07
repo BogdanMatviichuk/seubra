@@ -1,0 +1,71 @@
+@import "../config/vars";
+
+.home-hero {
+  position: relative;
+  max-width: 100%;
+  padding-bottom: 115px;
+
+  background-image: url(../../images/bg/home-hero-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  @media (min-width: 480px) {
+    background-image: url(../../images/bg/home-hero-brooke-cagle-g1Kr4Ozfoac-unsplash.jpg);
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, rgba(12, 12, 12, 0.608) 0%, rgba(12, 12, 12, 0.416) 44.79%, rgba(54, 53, 53, 0.136) 100%);
+  }
+
+  @media (min-width: 1800px) {
+    min-height: calc(100vh - 100px);
+  }
+
+  .df {
+    min-height: 67vh;
+    align-items: center;
+  }
+
+  &-content {
+    margin-top: 15px;
+    @media (min-width: 480px) {
+      margin-top: 30px;
+    }
+  }
+
+  &__title {
+    max-width: 870px;
+    margin: 0 auto;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 160%;
+    text-align: center;
+    text-transform: uppercase;
+    @media (min-width: 768px) {
+      font-size: 48px;
+    }
+    @media (min-width: 900px) {
+      font-size: 64px;
+    }
+  }
+
+  &__description {
+    font-size: 24px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  &__btn {
+    margin-top: 34px;
+  }
+}
+
+

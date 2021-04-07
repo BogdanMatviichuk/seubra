@@ -1,0 +1,34 @@
+@import '../config/vars';
+
+.header {
+  padding: 12px 0;
+  width: 100%;
+  flex: 0 0 auto;
+  transition: all 0.3s;
+  background-color: $bg-dark;
+
+  @media (min-width: 1024px) {
+
+  }
+
+
+  .logo {
+    display: inline-block;
+    max-width: 132px;
+    picture {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-nav {
+    flex: 1 1 auto;
+    margin-left: auto;
+    max-width: 600px;
+    padding-left: 50px;
+    display: none;
+    @media (min-width: 992px) {
+      display: block;
+    }
+  }
+}

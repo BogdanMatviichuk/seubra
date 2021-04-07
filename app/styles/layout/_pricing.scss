@@ -1,0 +1,210 @@
+@import "../config/vars";
+
+.s-membership {
+  @media (max-width: 1023px) {
+    text-align: center;
+    .df {
+      flex-wrap: wrap;
+    }
+  }
+  &--right {
+    .membership-image {
+      @media (min-width: 1024px) {
+        transform: translate(-10%, 0);
+      }
+    }
+  }
+  &--left {
+    .membership-image {
+      @media (min-width: 1024px) {
+        transform: translate(10%, 0);
+      }
+    }
+  }
+  &--single {
+    .membership__card {
+      @media (min-width: 680px) {
+        min-width: 210px;
+        margin-right: 30px;
+      }
+    }
+    .membership-cards {
+      align-items: center;
+      @media (min-width: 680px) {
+        margin-right: 30px;
+      }
+    }
+    .btn-wrap {
+      margin-top: 40px;
+      text-align: center;
+    }
+  }
+  &.s-light {
+    .membership {
+      &__title {
+        margin-top: 0;
+      }
+      &__card {
+        background-color: #fff;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+        &:nth-child(2) {
+          border: 2px solid #40C56A;
+        }
+      }
+      &__icon {
+        svg {
+          path {
+            fill: #32394D;
+          }
+        }
+      }
+
+      &-image {
+        @media (max-width: 1023px) {
+          order:2
+        }
+      }
+      &-content {
+        @media (max-width: 1023px) {
+          order:1
+        }
+      }
+    }
+  }
+}
+
+.membership {
+
+  &-content {
+    width: 100%;
+    @media (min-width: 1024px) {
+      width: 60%;
+
+    }
+  }
+  &-image {
+    width: 100%;
+    text-align: center;
+    @media (max-width: 1023px) {
+      picture {
+        display: none;
+      }
+    }
+    @media (min-width: 1024px) {
+      width: 38%;
+    }
+    .btn {
+      margin-top: 40px;
+    }
+  }
+
+  &__proposal {
+    margin-bottom: 35px;
+    font-weight: bold;
+    font-size: 28px;
+  }
+
+  &-cards {
+    margin-left: -10px;
+    margin-right: -10px;
+    @media (min-width: 680px) {
+      display: flex;
+      align-items: stretch;
+      flex-direction: row;
+    }
+    @media (max-width: 1023px) {
+      justify-content: center;
+    }
+  }
+  &__card {
+    margin: 10px;
+    padding: 30px;
+    background-color: #333A47;
+    border-radius: 5px;
+    text-align: center;
+    @media (max-width: 679px) {
+      max-width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    p {
+      line-height: 1;
+    }
+  }
+
+  &__icon {
+    max-height: 25px;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    max-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  &__price {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 28px;
+    color: $bg-green;
+    line-height: 1;
+  }
+
+  &__period {
+
+    font-weight: 500;
+    font-size: 16px;
+    color: $bg-green;
+  }
+
+  &-list {
+    list-style-type: none;
+    margin: 40px 0 0;
+    padding: 0;
+    @media (max-width: 1023px) {
+      margin-bottom: 30px;
+    }
+    li {
+      position: relative;
+      padding-bottom: 30px;
+      padding-left: 45px;
+      text-align: left;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 27px;
+        height: 27px;
+        background-image: url("data:image/svg+xml,%3Csvg width='29' height='29' viewBox='0 0 29 29' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M27.6667 13.1143V14.341C27.665 17.2162 26.734 20.0139 25.0124 22.3167C23.2909 24.6196 20.871 26.3043 18.1138 27.1195C15.3566 27.9347 12.4097 27.8368 9.71263 26.8404C7.01558 25.844 4.71287 24.0024 3.14795 21.5904C1.58302 19.1783 0.839722 16.3251 1.0289 13.4561C1.21808 10.5871 2.32961 7.85607 4.19771 5.6704C6.0658 3.48472 8.59038 1.96147 11.3949 1.32783C14.1995 0.694178 17.1337 0.984081 19.76 2.1543' stroke='%2340C56A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M27.6666 3.67383L14.3333 17.0205L10.3333 13.0205' stroke='%2340C56A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+    &.list--2cols {
+      @media (min-width: 680px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      li {
+        position: relative;
+        //max-width: 230px;
+        @media (min-width: 680px) {
+          width: 50%;
+          padding-right: 56px;
+        }
+      }
+    }
+  }
+}
+
+.c-green {
+  color: $bg-green;
+}
